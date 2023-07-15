@@ -29,7 +29,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _divisorCounter() {
     setState(() {
-      _counter *= 0.5;
+      _counter /= 2;
     });
   }
 
@@ -68,6 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ],
               ),
             ),
+            const SizedBox(width: 10),
             FloatingActionButton(
               onPressed: _decrementCounter,
               tooltip: 'Restar',
@@ -80,6 +81,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ],
               ),
             ),
+            const SizedBox(width: 10),
             FloatingActionButton(
               onPressed: _multiplierCounter,
               tooltip: 'Multiplicar',
@@ -92,6 +94,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ],
               ),
             ),
+            const SizedBox(width: 10),
             FloatingActionButton(
               onPressed: _divisorCounter,
               tooltip: 'Dividir',
